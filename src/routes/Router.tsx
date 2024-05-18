@@ -1,15 +1,15 @@
+import { route } from '@routes/route'
 import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import ROUTE from './route'
 
-const ErrorPage = lazy(() => import('../pages/ErrorPage'))
-const Home = lazy(() => import('../pages/Home'))
+const ErrorPage = lazy(() => import('@pages/ErrorPage'))
+const Home = lazy(() => import('@pages/Home'))
 
 function Router() {
     return (
         <Routes>
             <Route
-                path={ROUTE.index}
+                path={route.index}
                 element={<Home />}
             />
 

@@ -1,5 +1,3 @@
-const ROUTE = {
+export const route = {
     index: '/',
 }
-
-export default ROUTE

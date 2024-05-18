@@ -1,5 +1,5 @@
 import { Center, Stack, Text } from '@chakra-ui/react'
-import ExampleComponent from '../components/Example'
+import ExampleComponent from '@components/Example'
 
 function Home() {
     return (

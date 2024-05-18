@@ -4,12 +4,12 @@ import { Router as ReactRouter } from 'react-router-dom'
 
 const history = createBrowserHistory()
 
-type TRouteProvider = {
+interface RouteProviderProps {
     children: ReactNode
     basename?: string
 }
 
-function RouteProvider({ children, basename }: TRouteProvider) {
+function RouteProvider({ children, basename }: RouteProviderProps) {
     const [routeState, setRouteState] = useState({
         action: history.action,
         location: history.location,

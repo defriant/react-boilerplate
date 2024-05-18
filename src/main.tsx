@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import App from './App'
-import RouteProvider from './providers/RouteProvider'
+import RouteProvider from './routes/RouteProvider'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from './theme'
 

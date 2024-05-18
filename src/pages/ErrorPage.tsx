@@ -1,13 +1,13 @@
 import { Divider, Flex, Text } from '@chakra-ui/react'
 
-type TErrorPage = {
+interface ErrorPageProps {
     code?: string
     message: string
     width?: string
     height?: string
 }
 
-function ErrorPage({ code, message, width = 'max-content', height = '80px' }: TErrorPage) {
+function ErrorPage({ code, message, width = 'max-content', height = '80px' }: ErrorPageProps) {
     return (
         <>
             <Flex
